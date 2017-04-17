@@ -8,7 +8,7 @@ output_filename = "sample_packets/KG5RHL-11_parsed.txt"
 all_fields = ['from', 'via', 'path', 'to', 'latitude', 'longitude', 'altitude', 'posambiguity', 'course', 'speed', 'format', 'messagecapable', 'symbol', 'symboltable', 'raw', 'comment']
 
 # define which fields will be written into the output file
-desired_fields = {'latitude', 'longitude', 'altitude', 'from'}
+desired_fields = {'latitude', 'longitude', 'altitude', 'from', 'speed', 'course', 'comment'}
 
 # define string to use in case of null data (field does not exist in packet)
 null_data_value = "NA"
