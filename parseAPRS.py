@@ -1,7 +1,7 @@
 import aprslib
 
-input_filename = "B:/Workspaces/R/UMDBPP/NS63/KG5RHL-11_raw.txt"
-output_filename = "B:/Workspaces/R/UMDBPP/NS63/KG5RHL-11_parsed.txt"
+input_filename = "sample_packets/KG5RHL-11_raw.txt"
+output_filename = "sample_packets/KG5RHL-11_parsed.txt"
 
 header = ['DateTime', 'Latitude', 'Longitude', 'Altitude_m', 'Callsign']
 
