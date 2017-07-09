@@ -11,7 +11,7 @@ all_fields = ['from', 'via', 'path', 'to', 'latitude', 'longitude', 'altitude', 
 desired_fields = ['latitude', 'longitude', 'altitude', 'speed', 'course', 'from', 'comment']
 
 # define string to use in case of null data (if a certain field does not exist in a packet)
-null_data_value = "NA"
+null_data_string = "NA"
 
 # read all lines of input file
 with open(input_filename, "r") as input_file:
@@ -47,7 +47,7 @@ with open(output_filename, "w") as output_file:
                 current_output_data.append(str(current_aprs_packet[field]).replace(',', ';'))
             else:
                 # if the field is not in the current APRS packet, append the null data value instead
-                current_output_data.append(null_data_value)
+                current_output_data.append(null_data_string)
         
         # write line to output file
         output_file.write(','.join(current_output_data) + '\n')
