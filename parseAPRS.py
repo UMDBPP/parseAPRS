@@ -2,7 +2,7 @@ import aprslib
 
 # define filenames of input and output files
 input_filename = "sample_packets/KG5RHL-11_raw.txt"
-output_filename = "sample_packets/KG5RHL-11_parsed.txt"
+output_filename = "sample_packets/KG5RHL-11_parsed.csv"
 
 # these are all the possible fields contained within the APRS data. You don't have to use all of them (see desired_fields)
 all_fields = ['from', 'via', 'path', 'to', 'latitude', 'longitude', 'altitude', 'posambiguity', 'course', 'speed', 'format', 'messagecapable', 'symbol', 'symboltable', 'raw', 'comment']
